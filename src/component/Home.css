@@ -1,0 +1,70 @@
+
+form {
+  max-width: 500px; 
+  margin: 50px auto; 
+  padding: 20px;
+  border-radius: 10px; 
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+
+h2 {
+  text-align: center; 
+  margin-bottom: 20px; 
+  color: #333; 
+  font-family: 'Arial', sans-serif; 
+  font-size: 24px; 
+}
+
+
+input[type="text"],
+input[type="number"],
+input[type="file"] {
+  width: 250px; 
+  padding: 12px;
+  border: 2px solid #FF9A8B; 
+  border-radius: 12px;
+  outline: none;
+  font-size: 16px;
+  box-shadow: 0 4px 8px rgba(255, 154, 139, 0.5);
+}
+
+input[type="file"] {
+  padding: 3px; 
+}
+
+
+button[type="submit"] {
+  background-color: #f5a623;
+  color: white;
+  font-weight: bold;
+  padding: 12px 24px;
+  border-radius: 9999px;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  display: block;
+  margin: 0 auto;
+  max-width: 200px;
+  width: 100%; 
+}
+
+
+button[type="submit"]:hover {
+  background-color: #FF5252;
+  transform: scale(1.05); 
+}
+
+@media (max-width: 600px) {
+  form {
+    padding: 15px; 
+  }
+
+  input[type="text"],
+  input[type="number"],
+  input[type="file"],
+  button[type="submit"] {
+    font-size: 14px; 
+    padding: 10px;
+  }
+}

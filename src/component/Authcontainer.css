@@ -1,0 +1,171 @@
+
+
+.sign-in-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+}
+
+
+.sign-in-wrapper {
+  display: flex;
+  width: 120%;
+  max-width: 1200px;
+  min-height: 600px;
+ 
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 12px rgba(255, 154, 139, 0.5);
+ 
+  background: #FFFFFF;
+
+}
+
+
+.image-section {
+  flex: 1;
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+}
+
+.sign-in-image {
+  width: 100%;
+  height: auto;
+}
+
+
+.form-section {
+  flex: 1;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFFFFF;
+}
+
+
+.form-title {
+  margin-bottom: 20px;
+  color: #c64837;
+
+  font-size: 36px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+
+}
+
+.sign-in-form {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+}
+
+.password-error-toast {
+  z-index: -1; 
+}
+
+.sign-in-container {
+  position: relative;
+}
+
+.sign-in-wrapper {
+  position: relative;
+  z-index: 1; 
+}
+
+
+
+.username-input,
+.email-input,
+.password-input,
+.input-field {
+  width: 360px;
+ 
+  padding: 12px;
+  border: 2px solid #FF9A8B;
+
+  border-radius: 12px;
+  outline: none;
+  font-size: 16px;
+  box-shadow: 0 4px 8px rgba(255, 154, 139, 0.5);
+
+}
+
+.username-input.email-input:focus,
+.password-input:focus,
+.input-field:focus {
+  border-color: #FF9A8B;
+ 
+  box-shadow: 0 4px 8px rgba(255, 154, 139, 0.75);
+ 
+}
+
+.submit-button {
+  background-color: #f5a623;
+  color: white;
+  font-weight: bold;
+  padding: 12px 24px;
+  border-radius: 9999px;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  display: block;
+  margin-left: 280px;
+
+}
+
+.submit-button:hover {
+  background-color: #FF5252;
+  transform: scale(1.05);
+ 
+}
+
+
+.account-toggle-text {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+
+}
+
+.sign-up-link {
+  color: #c64837;
+
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.sign-up-link:hover {
+  text-decoration: underline;
+}
+
+
+.Toastify__toast--success {
+  background-color: #c64837;
+
+}
+
+.Toastify__toast--error {
+  background-color: #FF5722;
+ 
+}
+
+.sign-in-container {
+  padding-left: 200px;
+
+  padding-right: 200px;
+
+}
+
+@media (min-width: 768px) {
+  .sign-in-container {
+    padding-left: 400px;
+   
+    padding-right: 200px;
+    
+    padding-top: 100px;
+  }
+}

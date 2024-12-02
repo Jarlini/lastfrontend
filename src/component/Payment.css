@@ -1,0 +1,223 @@
+.payment-page {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    width: 2100px;
+    
+  }
+  
+  .cart-summary {
+    width: 25%; 
+    background-color:   #fff5e6;
+    padding: 10px;
+    border-radius: 8px; 
+    box-shadow:orange; 
+    margin: 0 auto; 
+    text-align: center; 
+    height:65%;
+  }
+  
+  
+  .cart-summary h2 {
+    color: #ff7f50;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .cart-summary ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .cart-summary li {
+    font-size: 1.1rem;
+    margin: 8px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  h3 {
+    text-align: center;
+    color: #333;
+    font-weight: bold;
+  }
+  
+
+  .booking-form {
+    width: 25%; 
+    background-color:  #fff5e6;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .booking-form label {
+    display: block;
+    font-size: 1rem;
+    margin: 10px 0;
+    color: #666;
+  }
+  
+  .booking-form input {
+    width: 250px;
+    padding: 12px;
+    border: 2px solid #FF9A8B; 
+    border-radius: 12px;
+    outline: none;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(255, 154, 139, 0.5);
+  }
+  
+  .booking-form input:focus {
+    border-color: #ff7f50;
+  }
+  
+  .booking-form button {
+    background-color: #f5a623;
+    color: white;
+    font-weight: bold;
+    padding: 12px 24px;
+    border-radius: 9999px;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .booking-form button:hover {
+    background-color: #FF5252;
+    transform: scale(1.05);
+  }
+  
+  .booking-form div {
+    margin-bottom: 20px;
+  }
+  .animated-message {
+    color: #f5a623; 
+    font-size: 18px;
+    margin: 20px 0; 
+    opacity: 0; 
+    transform: translateY(20px); 
+    animation: fadeIn 0.5s forwards; 
+  }
+  
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+      transform: translateY(0); 
+    }
+  }
+  .paypal-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 20px; 
+  }
+  
+  .payment-page {
+    padding: 20px; 
+  }
+  
+  .cart-summary {
+    margin-bottom: 20px; 
+  }
+  
+  .animated-message {
+    font-style: italic; 
+    margin-top: 10px;
+  }
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.shadow-text {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.bg-gradient-to-r {
+  background-image: linear-gradient(to right, #e6fffa, #fff0e6);
+}
+
+.button {
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dialog-content {
+  max-width: 90%;
+  width: 500px;
+}
+
+@media (max-width: 640px) {
+  .dialog-content {
+    width: 95%;
+  }
+}
+.blog-section {
+  background: linear-gradient(135deg, #20c997, #fd7e14);
+  border-radius: 0.5rem;
+  color: #fff;
+}
+
+.blog-card {
+  background: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #333;
+}
+
+.blog-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.blog-content {
+  padding: 15px;
+  text-align: center;
+}
+
+.blog-content h5 {
+  color: #20c997;
+  font-weight: bold;
+}
+
+.blog-content p {
+  color: #555;
+}
+
+button {
+  color: #20c997;
+  background: #fff;
+  border: 2px solid #20c997;
+  padding: 5px 15px;
+  border-radius: 25px;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  color: #fff;
+  background-color: #20c997;
+  border-color: #fd7e14;
+}
