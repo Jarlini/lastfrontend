@@ -226,11 +226,7 @@ export default function LandingPage() {
       </div>
     </section>
       <br/><br/><br/><br/>
-      <div id="trips-section" className="trips-section py-5">
-      <h2 className="section-title text-center mb-5">Explore Our Pilgrimages</h2>
-      <br />
-      <br />
-
+      
 
      
     <div id="trips-section" className="trips-section py-5">
@@ -285,7 +281,6 @@ export default function LandingPage() {
          
         </div>
         
-      </div>
   
   );
 }
