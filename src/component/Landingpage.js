@@ -206,7 +206,7 @@ export default function LandingPage() {
         </div>
       </div>
       <br/><br/><br/><br/><br/>
-      {/* <section className="why-choose-us py-5 bg-light">
+      <section className="why-choose-us py-5 bg-light">
       <div className="container">
         <h2 className="text-center mb-5 fw-bold" style={{ color: '#008080' }}>
           <br /> Why Choose Us? <br /><br /><br />
@@ -224,38 +224,49 @@ export default function LandingPage() {
           ))}
         </div>
       </div>
-    </section> */}
+    </section>
       <br/><br/><br/><br/>
       <div id="trips-section" className="trips-section py-5">
-        <h2 className="section-title text-center mb-5">Explore Our Pilgrimages</h2><br/><br/>
-        <div className="trips-grid" style={{ marginLeft:'50px' }}>
-          {trips.map((trip) => (
-            <div key={trip._id} className="trip-card">
-              <div className="trip-content">
-                <h3 className="trip-title">{trip.title}</h3>
-                <div className="trip-photos">
-                  {trip.photos.slice(0, 3).map((photo, index) => (
-                    <img key={index} src={photo} alt={`Trip photo ${index + 1}`} className="trip-photo" />
-                  ))}
-                </div>
-                <p className="trip-detail">
-                  <FontAwesomeIcon icon={faLocationDot} className="icon" /> {trip.location}
-                </p>
-                <p className="trip-detail">
-                  <FontAwesomeIcon icon={faCalendar} className="icon" /> {trip.days} Days
-                </p>
-                <p className="trip-detail">
-                  <FontAwesomeIcon icon={faClipboardList} className="icon" /> {trip.schedule}
-                </p>
+      <h2 className="section-title text-center mb-5">Explore Our Pilgrimages</h2>
+      <br />
+      <br />
+      <div className="trips-grid" style={{ marginLeft: '50px' }}>
+        {trips.map((trip) => (
+          <div key={trip._id} className="trip-card">
+            <div className="trip-content">
+              <h3 className="trip-title">{trip.title}</h3>
+              <div className="trip-photos">
+                {trip.photos.slice(0, 3).map((photo, index) => (
+                  <img
+                    key={index}
+                    src={photo}
+                    alt={`Trip photo ${index + 1}`}
+                    className="trip-photo"
+                  />
+                ))}
               </div>
-              <div className="trip-action">
-                <button onClick={handleJoinClick} className="join-button btn btn-primary btn-neat">
-                  <FontAwesomeIcon icon={faMapMarkedAlt} className="icon" /> Join with Us
-                </button>
-              </div>
+              <p className="trip-detail">
+                <FontAwesomeIcon icon={faLocationDot} className="icon" /> {trip.location}
+              </p>
+              <p className="trip-detail">
+                <FontAwesomeIcon icon={faCalendar} className="icon" /> {trip.days} Days
+              </p>
+              <p className="trip-detail">
+                <FontAwesomeIcon icon={faClipboardList} className="icon" /> {trip.schedule}
+              </p>
             </div>
-          ))}
-        </div>
+            <div className="trip-action">
+              <button
+                onClick={handleJoinClick}
+                className="join-button btn btn-primary btn-neat"
+              >
+                <FontAwesomeIcon icon={faMapMarkedAlt} className="icon" /> Join with Us
+              </button>
+            </div>
+          </div>
+        ))}
+      </div>
+    
         <br/><br/><br/><br/>
         
         </div>
