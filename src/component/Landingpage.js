@@ -230,45 +230,59 @@ export default function LandingPage() {
       <h2 className="section-title text-center mb-5">Explore Our Pilgrimages</h2>
       <br />
       <br />
-      {/* <div className="trips-grid" style={{ marginLeft: '50px' }}>
-        {trips.map((trip) => (
-          <div key={trip._id} className="trip-card">
-            <div className="trip-content">
-              <h3 className="trip-title">{trip.title}</h3>
-              <div className="trip-photos">
-                {trip.photos.slice(0, 3).map((photo, index) => (
-                  <img
-                    key={index}
-                    src={photo}
-                    alt={`Trip photo ${index + 1}`}
-                    className="trip-photo"
-                  />
-                ))}
+
+
+     
+    <div id="trips-section" className="trips-section py-5">
+      <h2 className="section-title text-center mb-5">Explore Our Pilgrimages</h2>
+      <br />
+      <br />
+      <div className="trips-grid" style={{ marginLeft: '50px' }}>
+        {Array.isArray(trips) && trips.length > 0 ? (
+          trips.map((trip) => (
+            <div key={trip._id} className="trip-card">
+              <div className="trip-content">
+                <h3 className="trip-title">{trip.title}</h3>
+                <div className="trip-photos">
+                  {Array.isArray(trip.photos) && trip.photos.slice(0, 3).map((photo, index) => (
+                    <img
+                      key={index}
+                      src={photo}
+                      alt={`Trip photo ${index + 1}`}
+                      className="trip-photo"
+                    />
+                  ))}
+                </div>
+                <p className="trip-detail">
+                  <FontAwesomeIcon icon={faLocationDot} className="icon" /> {trip.location}
+                </p>
+                <p className="trip-detail">
+                  <FontAwesomeIcon icon={faCalendar} className="icon" /> {trip.days} Days
+                </p>
+                <p className="trip-detail">
+                  <FontAwesomeIcon icon={faClipboardList} className="icon" /> {trip.schedule}
+                </p>
               </div>
-              <p className="trip-detail">
-                <FontAwesomeIcon icon={faLocationDot} className="icon" /> {trip.location}
-              </p>
-              <p className="trip-detail">
-                <FontAwesomeIcon icon={faCalendar} className="icon" /> {trip.days} Days
-              </p>
-              <p className="trip-detail">
-                <FontAwesomeIcon icon={faClipboardList} className="icon" /> {trip.schedule}
-              </p>
+              <div className="trip-action">
+                <button
+                  onClick={handleJoinClick}
+                  className="join-button btn btn-primary btn-neat"
+                >
+                  <FontAwesomeIcon icon={faMapMarkedAlt} className="icon" /> Join with Us
+                </button>
+              </div>
             </div>
-            <div className="trip-action">
-              <button
-                onClick={handleJoinClick}
-                className="join-button btn btn-primary btn-neat"
-              >
-                <FontAwesomeIcon icon={faMapMarkedAlt} className="icon" /> Join with Us
-              </button>
-            </div>
-          </div>
-        ))}
+          ))
+        ) : (
+          <p>No trips available.</p>
+        )}
       </div>
-    
-        <br/><br/><br/><br/>
-         */}
+
+      <br /><br /><br /><br />
+      <ImageGallery trips={trips} />
+      <br /><br /><br /><br />
+    </div>        <br/><br/><br/><br/>
+         
         </div>
         <ImageGallery trips={trips} /> <br/><br/><br/><br/>
       </div>
