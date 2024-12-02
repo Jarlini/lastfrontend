@@ -207,24 +207,24 @@ export default function LandingPage() {
       </div>
       <br/><br/><br/><br/><br/>
       <section className="why-choose-us py-5 bg-light">
-        <div className="container">
-          <h2 className="text-center mb-5 fw-bold" style={{ color: '#008080' }}>
-          <br/>   Why Choose Us?<br/><br/><br/>
-          </h2>
-          <div className="row text-center">
-            {features.map(({ icon, title }) => (
-              <div key={title} className="col-12 col-md-6 col-lg-3 mb-4">
-                <div className="feature-card p-4 rounded shadow-sm h-100 d-flex flex-column align-items-center justify-content-center">
-                  <div className="icon-box d-flex align-items-center justify-content-center bg-white p-3 rounded-circle mb-3 shadow">
-                    <FontAwesomeIcon icon={icon} className="text-black fs-1" />
-                  </div>
-                  <h4 className="feature-title">{title}</h4>
+      <div className="container">
+        <h2 className="text-center mb-5 fw-bold" style={{ color: '#008080' }}>
+          <br /> Why Choose Us? <br /><br /><br />
+        </h2>
+        <div className="row text-center">
+          {features.map(({ icon, title }, index) => (
+            <div key={index} className="col-12 col-md-6 col-lg-3 mb-4">
+              <div className="feature-card p-4 rounded shadow-sm h-100 d-flex flex-column align-items-center justify-content-center">
+                <div className="icon-box d-flex align-items-center justify-content-center bg-white p-3 rounded-circle mb-3 shadow">
+                  <FontAwesomeIcon icon={icon} className="text-black fs-1" />
                 </div>
+                <h4 className="feature-title">{title}</h4>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
-      </section>
+      </div>
+    </section>
       <br/><br/><br/><br/>
       <div id="trips-section" className="trips-section py-5">
         <h2 className="section-title text-center mb-5">Explore Our Pilgrimages</h2><br/><br/>
