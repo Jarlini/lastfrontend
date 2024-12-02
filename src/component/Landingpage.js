@@ -230,7 +230,7 @@ export default function LandingPage() {
       <h2 className="section-title text-center mb-5">Explore Our Pilgrimages</h2>
       <br />
       <br />
-      <div className="trips-grid" style={{ marginLeft: '50px' }}>
+      {/* <div className="trips-grid" style={{ marginLeft: '50px' }}>
         {trips.map((trip) => (
           <div key={trip._id} className="trip-card">
             <div className="trip-content">
@@ -268,7 +268,7 @@ export default function LandingPage() {
       </div>
     
         <br/><br/><br/><br/>
-        
+         */}
         </div>
         <ImageGallery trips={trips} /> <br/><br/><br/><br/>
       </div>
