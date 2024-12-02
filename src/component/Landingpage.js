@@ -281,10 +281,10 @@ export default function LandingPage() {
       <br /><br /><br /><br />
       <ImageGallery trips={trips} />
       <br /><br /><br /><br />
-    </div>        <br/><br/><br/><br/>
+    </div>       
          
         </div>
-        <ImageGallery trips={trips} /> <br/><br/><br/><br/>
+        
       </div>
   
   );
