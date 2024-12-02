@@ -206,7 +206,7 @@ export default function LandingPage() {
         </div>
       </div>
       <br/><br/><br/><br/><br/>
-      <section className="why-choose-us py-5 bg-light">
+      {/* <section className="why-choose-us py-5 bg-light">
       <div className="container">
         <h2 className="text-center mb-5 fw-bold" style={{ color: '#008080' }}>
           <br /> Why Choose Us? <br /><br /><br />
@@ -224,7 +224,7 @@ export default function LandingPage() {
           ))}
         </div>
       </div>
-    </section>
+    </section> */}
       <br/><br/><br/><br/>
       <div id="trips-section" className="trips-section py-5">
         <h2 className="section-title text-center mb-5">Explore Our Pilgrimages</h2><br/><br/>
