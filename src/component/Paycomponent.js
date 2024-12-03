@@ -54,7 +54,7 @@ const PackagesPage = () => {
       <div className="row">
         <div className="col-md-8">
           <div className="row row-cols-1 row-cols-md-2 g-4">
-            {packages.map((pkg) => (
+          {Array.isArray(packages) && packages.map((pkg) => (
               <div key={pkg._id} className="col">
                 <div className="card h-100 shadow-sm border-primary">
                   {pkg.photos && pkg.photos.length > 0 ? (
