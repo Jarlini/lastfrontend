@@ -59,7 +59,7 @@ const PackagesPage = () => {
                 <div className="card h-100 shadow-sm border-primary">
                   {pkg.photos && pkg.photos.length > 0 ? (
                     <img 
-                      src={`http://localhost:5000/${pkg.photos[0]}`} 
+                      src={`${process.env.URL}/${pkg.photos[0]}`} 
                       alt={pkg.name} 
                       className="card-img-top"
                       style={{ height: '200px', objectFit: 'cover' }}

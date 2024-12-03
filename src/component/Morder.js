@@ -28,7 +28,7 @@ export default function MOrder() {
   useEffect(() => {
     const fetchOrders = async () => {
       try {
-        const response = await api.get('http://localhost:5000/api/bookings/orders'); // Adjust endpoint as necessary
+        const response = await api.get(`${process.env.URL}/api/bookings/orders`); // Adjust endpoint as necessary
         const ordersData = response.data;
         
         // Group orders by package type

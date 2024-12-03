@@ -1,5 +1,5 @@
 import axios from 'axios';
-const API_URL = 'http://localhost:5000'; // Adjust as per your server
+const API_URL = `${process.env.URL}`; // Adjust as per your server
 
 export const getPackages = async () => {
   try {

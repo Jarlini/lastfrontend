@@ -6,7 +6,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import './Authcontainer.css'; // Ensure the correct path to your CSS file
 import pic3 from './photos/Screenshot from 2024-09-09 11-24-59.png'; // Adjust the path to the image as needed
 
-axios.defaults.baseURL = 'http://localhost:5000'; // Backend URL
+axios.defaults.baseURL = `${process.env.URL}`; // Backend URL
 
 function SignUpPage() {
     const [username, setUsername] = useState('');

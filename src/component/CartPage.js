@@ -60,7 +60,7 @@ export default function CutePaymentPage() {
   
       console.log('Booking Data:', payload);
   
-      const response = await axios.post('http://localhost:5000/api/bookings/booking', payload);
+      const response = await axios.post(`${process.env.URL}/api/bookings/booking`, payload);
       console.log('Booking saved:', response.data);
   
       alert('Booking successful!');

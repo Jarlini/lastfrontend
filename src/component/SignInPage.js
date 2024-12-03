@@ -6,7 +6,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import '../component/Authcontainer.css'; // Ensure this path is correct
 import pic3 from '../component/photos/Screenshot from 2024-09-09 11-25-09.png'; // Corrected import statement
 
-axios.defaults.baseURL = 'http://localhost:5000'; // Backend URL
+axios.defaults.baseURL = `${process.env.URL}`; // Backend URL
 
 
 function SignInPage() {
