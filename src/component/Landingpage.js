@@ -35,7 +35,7 @@ export default function LandingPage() {
   useEffect(() => {
     const fetchTrips = async () => {
       try {
-        const res = await api.get('${backendUrl}/trips');
+        const res = await api.get('/trips');
         setTrips(res.data);
       } catch (err) {
         console.error("Error fetching trips:", err);
